@@ -32,9 +32,9 @@ class Konversi {
     }
     
     public String kondisiAir(){
-        if(celcius<=0){
+        if(this.celcius<=0){
             return "Kondisi Air Beku.";
-        }else if(celcius>=100){
+        }else if(this.celcius>=100){
             return "Kondisi Air Mendidih.";
         }else{
             return "Kondisi Air Normal.";
