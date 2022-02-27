@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Input Data\n----------");
         System.out.print("Suhu Dalam Celcius\t: ");
         Scanner input = new Scanner(System.in);
-        double suhu = input.nextDouble();
+        double suhu = input.nextDouble();//input suhu celcius
         Konversi konversi = new Konversi(suhu);
         
         OUTER:
@@ -34,7 +34,7 @@ public class Main {
             int pilihan = input.nextInt();
             switch (pilihan) {
                 case 1:
-                    System.out.println("\nSuhu dalam Celcius\t: "+konversi.celcius+"\u00B0C");
+                    System.out.println("\nSuhu dalam Celcius\t: "+konversi.celcius+"\u00B0C");//menampilkan data
                     System.out.println("Dalam Fahrenheit\t: "+konversi.convertFahrenheit()+"\u00B0F");
                     System.out.println("Dalam Reamur\t\t: "+konversi.convertReamur()+"\u00B0R");
                     System.out.println("Dalam Kelvin\t\t: "+konversi.convertKelvin()+"K");
@@ -42,7 +42,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("\nInput Data\n----------");
-                    System.out.print("Suhu Dalam Celcius\t: ");
+                    System.out.print("Suhu Dalam Celcius\t: ");//input suhu celcius
                     suhu = input.nextDouble();
                     konversi.inputCelcius(suhu);
                     break;
